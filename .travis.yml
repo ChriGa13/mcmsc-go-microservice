@@ -11,4 +11,4 @@ services:
 
 script:
   # Test code
-  - go test -v ./..
+  - go test -v ./...
