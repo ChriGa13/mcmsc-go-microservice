@@ -7,8 +7,10 @@ go:
 
 services:
   - postgresql
-  - docker
 
 script:
-  # Test code
+  # Test the code
   - go test -v ./...
+
+  # Build the code 
+  - CGO_ENABLED=0 GOARCH=amd64 go build -o demo
